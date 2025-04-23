@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://www.revenuecat.com/"
   s.license          =  { :type => 'MIT' }
   s.author           = { "RevenueCat, Inc." => "support@revenuecat.com" }
-  s.source           = { :git => "https://github.com/revenuecat/purchases-hybrid-common.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/garrettApproachableGeek/purchases-hybrid-common.git", :tag => s.version.to_s }
   s.documentation_url = "https://docs.revenuecat.com/"
 
   s.framework      = 'StoreKit'
