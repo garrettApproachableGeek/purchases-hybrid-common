@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.framework      = 'StoreKit'
   s.framework      = 'SwiftUI'
 
-  s.dependency 'RevenueCatUI', '5.22.0'
+  s.dependency 'RevenueCatUI', :git => 'https://github.com/garrettApproachableGeek/purchases-ios-spm.git'
   s.dependency 'PurchasesHybridCommon'
   s.swift_version = '5.7'
 
