@@ -25,7 +25,7 @@ files_with_version_number_without_prerelease_modifiers = {
     './ios/PurchasesHybridCommon/PurchasesHybridCommonTests/Info.plist' => PLIST_VERSION_PATTERNS,
 }
 POD_VERSION_PATTERNS = ['\'RevenueCat\', \'{x}\'', '\'RevenueCatUI\', \'{x}\'']
-SPM_VERSION_PATTERNS = ['.package(url: "https://github.com/RevenueCat/purchases-ios-spm", exact: "{x}"),']
+SPM_VERSION_PATTERNS = ['.package(url: "https://github.com/garrettApproachableGeek/purchases-ios-spm", exact: "{x}"),']
 SPM_RESOLVED_VERSION_PATTERNS = ['"version" : "{x}"']
 files_to_update_ios_dependency = {
     'PurchasesHybridCommon.podspec' => POD_VERSION_PATTERNS,
@@ -291,7 +291,7 @@ private_lane :update_ios_native_version do |options|
   )
 
   # Updating the commit hash in Package.resolved.
-  ios_spm_repository = "https://github.com/RevenueCat/purchases-ios-spm"
+  ios_spm_repository = "https://github.com/garrettApproachableGeek/purchases-ios-spm"
   previous_commit_hash = get_commit_hash_for_tag(ios_spm_repository, previous_version_number)
   new_commit_hash = get_commit_hash_for_tag(ios_spm_repository, new_version_number)
   replace_text_in_files(
